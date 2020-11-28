@@ -1,0 +1,18 @@
+.reviews-section {
+  position: relative;
+
+  &:before {
+    content: url("../../img/decor/half-leaf-berries.png");
+    position: absolute;
+    bottom: -160px;
+    left: 0;
+    z-index: 10;
+  }
+
+  &:after {
+    content: url("../../img/decor/strawberry.png");
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+}
