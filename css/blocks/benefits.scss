@@ -7,7 +7,7 @@
     position: relative;
 
     &::before {
-      content: "../../img/decor/separator.png";
+      content: url("../../img/decor/separator.png");
       position: absolute;
       top: 58px;
       right: 0;
