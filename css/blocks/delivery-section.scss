@@ -1,17 +1,17 @@
 .delivery-section {
-  background: url("../../img/raspberry-bg.png") no-repeat;
+  background: "../../img/raspberry-bg.png" no-repeat;
   background-size: cover;
   position: relative;
 
   &:before {
-    content: url("../../img/decor/blueberry.png");
+    content: "../../img/decor/blueberry.png";
     position: absolute;
     bottom: 100px;
     left: 70px;
   }
 
   &:after {
-    content: url("../../img/decor/leaf.png");
+    content: "../../img/decor/leaf.png";
     position: absolute;
     bottom: 50px;
     right: 20px;
