@@ -959,12 +959,9 @@ body {
 }
 .socials__list {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
 }
 .socials__item {
   margin-right: 0.5555555556rem;
-  /* margin-bottom: rem(10px); */
 }
 .socials__item:last-child {
   margin-right: 0;
