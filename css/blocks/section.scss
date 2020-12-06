@@ -1,17 +1,18 @@
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   &__title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
-    margin-bottom: 28px;
+    margin-bottom: rem(28px);
     text-align: center;
     text-transform: uppercase;
     color: #000;
+
   }
 
   &--font-color--green {
@@ -19,7 +20,12 @@
 
     .section__title {
       color: inherit;
-      margin-bottom: 54px;
+      margin-bottom: rem(54px);
+
+      @include tablets {
+        margin-bottom: rem(27px);
+      }
     }
   }
+
 }

@@ -1,32 +1,49 @@
 .reviews {
   &__display {
     background: url("../img/decor/raspberry-branch.png") right top 10% no-repeat, #F8FAF9;
-    padding: 42px 160px 42px 33px;
-    margin-bottom: 11px;
+    padding: rem(42px) rem(160px) rem(42px) rem(33px);
+    margin-bottom: rem(11px);
     overflow: hidden;
     position: relative;
+
+    @include tablets {
+      padding: rem(56px) rem(28px) rem(64px);
+      margin-bottom: rem(32px);
+    }
 
     &:before {
       content: "";
       display: block;
-      width: 90px;
-      height: 90px;
+      width: rem(90px);
+      height: rem(90px);
       background: #fff;
       border-radius: 50%;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      top: -65px;
+      top: rem(-65px);
     }
   }
 
   &__display-inner {
     display: flex;
+
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
   }
 
   &__avatar {
-    width: 253px;
-    height: 264px;
+    width: rem(253px);
+    height: rem(264px);
+
+    @include tablets {
+      width: rem(130px);
+      height: rem(130px);
+      margin-bottom: rem(35px);
+    }
   }
 
   &__avatar-img {
@@ -37,26 +54,30 @@
 
   &__content {
     flex: 1;
-    margin-left: 40px;
+    margin-left: rem(40px);
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include tablets {
+      margin-left: 0;
+    }
   }
 
   &__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
     color: #292929;
   }
 
   &__text {
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
     line-height: 1.26;
   }
 
   &__author {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 500;
     color: black;
   }

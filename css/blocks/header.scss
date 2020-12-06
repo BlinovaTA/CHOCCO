@@ -1,5 +1,15 @@
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: flex-start;
+
+  @include tablets {
+    align-items: center;
+  }
+
+  &__contacts {
+    @include tablets {
+      display: none;
+    }
+  }
 }

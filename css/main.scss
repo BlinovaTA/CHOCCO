@@ -4,8 +4,14 @@ $containerWidth: 929px;
 $baseFontSize: 18px;
 $z-fixed-menu: 100;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap");
+
+@import "media";
 
 @import "layout/base";
 
@@ -28,3 +34,9 @@ $z-fixed-menu: 100;
 @import "blocks/form";
 @import "blocks/radio";
 @import "blocks/fixed-menu";
+@import "blocks/svg-icons";
+@import "blocks/hamburger";
+@import "blocks/footer";
+@import "blocks/map";
+@import "blocks/socials";
+

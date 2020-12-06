@@ -1,14 +1,30 @@
 .contacts {
-  &__phone {
-    font-size: 22px;
-    text-decoration: none;
+  font-style: normal;
+
+  @include phones {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
+  &__phone {
+    font-size: rem(22px);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
   &__icon-img {
-    width: 12px;
-    height: 12px;
-    margin-right: 6px;
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(6px);
+    flex-shrink: 0;
+  }
+}
+
+.footer {
+  .contacts__phone {
+    color: $darkGreen;
   }
 }

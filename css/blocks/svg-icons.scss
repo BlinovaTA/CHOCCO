@@ -1,0 +1,57 @@
+$lightBlue: #C6F7FF;
+$social: #B3B3B3;
+
+.phone-icon {
+  fill: white;
+  width: 14px;
+  height: 15px;
+}
+
+.footer {
+  .phone-icon {
+    fill: $darkGreen;
+  }
+}
+
+.leaf-icon,
+.truck-icon,
+.measure-icon {
+  fill: $lightBlue;
+  width: 41px;
+  height: 41px;
+}
+
+.human-icon {
+  width: 68px;
+  height: 69px;
+}
+
+.smile-icon,
+.muscle-icon {
+  width: 68px;
+  height: 68px;
+}
+
+.fb-icon {
+  width: 24px;
+  height: 24px;
+  fill: $social;
+}
+
+.insta-icon {
+  width: 24px;
+  height: 24px;
+  fill: $social;
+}
+
+.vk-icon {
+  width: 24px;
+  height: 24px;
+  fill: $social;
+}
+
+.tw-icon {
+  width: 24px;
+  height: 21px;
+  fill: $social;
+}
