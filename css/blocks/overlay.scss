@@ -1,0 +1,51 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2e3133;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 100;
+
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  -o-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &-menu {
+    position: absolute;
+    font-size: rem(36px);
+    line-height: rem(72px);
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+
+    &__list {
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+    }
+
+    &__item {
+      display: block;
+      position: relative;
+      line-height: 1;
+      margin-bottom: rem(30px);
+    }
+  }
+}
+
+.body--active {
+  overflow: hidden;
+}

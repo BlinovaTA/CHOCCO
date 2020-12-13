@@ -44,10 +44,10 @@
                 </a>
               </address>
             </div>
-            <a href="" class="hamburger">
-              <span class="hamburger__plank"></span>
-              <span class="hamburger__plank"></span>
-              <span class="hamburger__plank"></span>
+            <a href="#" class="hamburger">
+              <span class="hamburger__plank hamburger--top"></span>
+              <span class="hamburger__plank hamburger--middle"></span>
+              <span class="hamburger__plank hamburger--bottom"></span>
             </a>
           </header>
           <div class="hero__title-section">
@@ -149,6 +149,65 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="section slider-section">
+        <div class="container slider-container">
+          <a href="#" class="arrow" id="left">
+            <svg class="left-arrow-icon">
+              <use xlink:href="./img/icons/sprite.svg#left-arrow"></use>
+            </svg>
+          </a>
+          <nav class="slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <div class="slider__decor"></div>
+                <div class="slider__content">
+                  <div class="slider__about-menu">
+                    <a href="#" class="slider__candy">
+                      <div class="slider__icon-wrapper">
+                        <svg class="candy-icon">
+                          <use xlink:href="./img/icons/sprite.svg#candy"></use>
+                        </svg>
+                      </div>
+                      <div class="slider__candy-title">состав</div>
+                    </a>
+                  </div>
+                  <h3 class="slider__title">Батончик "Гранола виноград"</h3>
+                  <div class="slider__about">
+                    <div class="slider__text">
+                      <p>
+                        Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко,
+                        заменитель сахара и какао бобы.
+                      </p>
+                    </div>
+                    <ul class="slider__desc-list">
+                      <li class="slider__desc-item">
+                        <div class="slider__desc-name">Калорийность</div>
+                        <div class="slider__desc-value">110 ккал</div>
+                      </li>
+                      <li class="slider__desc-item">
+                        <div class="slider__desc-name">Вес</div>
+                        <div class="slider__desc-value">95 грамм</div>
+                      </li>
+                    </ul>
+                    <div class="slider__order">
+                      <div class="slider__price">140 ₽</div>
+                      <div class="slider__button-wrapper">
+                        <button class="button button--color--green">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </nav>
+          <a href="#" class="arrow" id="right">
+            <svg class="right-arrow-icon">
+              <use xlink:href="./img/icons/sprite.svg#right-arrow"></use>
+            </svg>
+          </a>
         </div>
       </section>
       <section class="section reviews-section">
@@ -324,7 +383,6 @@
       </section>
     </div>
   </div>
-  </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active">
@@ -356,6 +414,22 @@
       </li>
     </ul>
   </nav>
+
+  <div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+      <ul class="overlay-menu__list">
+        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">О нас</a></li>
+        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">Батончики</a></li>
+        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">Команда</a></li>
+        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">Меню</a></li>
+        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">Отзывы</a></li>
+        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">Кем мы работаем</a></li>
+        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="./js/overlay-menu.js"></script>
 </body>
 
 </html>

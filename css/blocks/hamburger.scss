@@ -4,10 +4,35 @@
   flex-direction: column;
   justify-content: space-between;
   display: none;
-  margin-right: 11px;
+  margin-right: rem(11px);
+  z-index: 200;
 
   @include tablets {
     display: inline-flex;
+  }
+
+  &.hamburger .hamburger--top,
+  &.hamburger .hamburger--middle,
+  &.hamburger .hamburger--bottom {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+  }
+
+  &.hamburger--active .hamburger--top {
+    -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
+    -ms-transform: translateY(10px) translateX(0) rotate(45deg);
+    transform: translateY(10px) translateX(0) rotate(45deg);
+  }
+
+  &.hamburger--active .hamburger--middle {
+    opacity: 0;
+  }
+
+  &.hamburger--active .hamburger--bottom {
+    -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
+    -ms-transform: translateY(-10px) translateX(0) rotate(-45deg);
+    transform: translateY(-10px) translateX(0) rotate(-45deg);
   }
 
   &__plank {
@@ -15,5 +40,6 @@
     background: #fff;
     height: 4px;
     border-radius: 10px;
+    position: relative;
   }
 }
