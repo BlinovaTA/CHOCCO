@@ -66,6 +66,8 @@
     margin-bottom: rem(24px);
     display: flex;
     position: relative;
+    width: 91px;
+    height: 91px;
 
     @include tablets {
       display: none;
@@ -162,4 +164,26 @@
     font-weight: 300;
   }
 
+  &__dropdown {
+    width: calc(100% - 91px);
+    background: #D5D5D5;
+    border-radius: 4px;
+    position: absolute;
+    left: 91px;
+    display: none;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      margin: 25px;
+    }
+  }
+}
+
+.dropdown--active {
+  display: block;
+}
+
+.slider__about-menu--active {
+  width: 100%;
 }

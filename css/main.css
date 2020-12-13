@@ -927,6 +927,42 @@ body {
   fill: #fff;
 }
 
+.almond-icon {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+}
+
+.apitherapy-icon {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+}
+
+.beans-icon {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+}
+
+.grape-icon {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+}
+
+.nut-icon {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+}
+
+.washing-powder-icon {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+}
+
 .hamburger {
   width: 26px;
   height: 24px;
@@ -1070,6 +1106,8 @@ body {
   margin-bottom: 1.3333333333rem;
   display: flex;
   position: relative;
+  width: 91px;
+  height: 91px;
 }
 @media screen and (max-width: 768px) {
   .slider__about-menu {
@@ -1160,6 +1198,27 @@ body {
   margin-right: 1.6666666667rem;
   font-weight: 300;
 }
+.slider__dropdown {
+  width: calc(100% - 91px);
+  background: #D5D5D5;
+  border-radius: 4px;
+  position: absolute;
+  left: 91px;
+  display: none;
+}
+.slider__dropdown-list {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+}
+
+.dropdown--active {
+  display: block;
+}
+
+.slider__about-menu--active {
+  width: 100%;
+}
 
 .overlay {
   position: fixed;
@@ -1204,4 +1263,24 @@ body {
 
 .body--active {
   overflow: hidden;
+}
+
+.product {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.product__value {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.product__icon-wrapper {
+  margin-right: 0.5555555556rem;
+}
+.product__title {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 0.8888888889rem;
+  line-height: 1.3333333333rem;
 }

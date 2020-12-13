@@ -1,0 +1,22 @@
+.product {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  &__value {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__icon-wrapper {
+    margin-right: rem(10px);
+  }
+
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: rem(16px);
+    line-height: rem(24px);
+  }
+}
