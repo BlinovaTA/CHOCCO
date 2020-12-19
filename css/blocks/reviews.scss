@@ -86,4 +86,25 @@
     display: flex;
     justify-content: center;
   }
+
+  &__list {
+    position: relative;
+    min-height: 280px;
+  }
+
+  &__item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: .3s;
+    opacity: 0;
+
+    &.active {
+      position: static;
+      opacity: 1;
+
+    }
+  }
 }

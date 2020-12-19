@@ -1,0 +1,38 @@
+.team {
+
+  &--desktop {
+    display: flex;
+    justify-content: space-between;
+
+    .person__content {
+      position: absolute;
+      top: 100%;
+    }
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-section {
+    position: relative;
+
+    &:before {
+      content: url("../img/decor/raspberry.png");
+      position: absolute;
+      bottom: rem(-50px);
+      left: 0;
+    }
+  }
+
+}
+

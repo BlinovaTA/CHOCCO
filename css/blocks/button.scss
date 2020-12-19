@@ -5,6 +5,8 @@
   text-transform: uppercase;
   border-radius: rem(100px);
   line-height: 1;
+  border: none;
+  cursor: pointer;
 
   &--color--white {
     background: #fff;

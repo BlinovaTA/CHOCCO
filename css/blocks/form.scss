@@ -44,6 +44,10 @@
     border: solid rem(3px) transparent;
     border-radius: rem(4px);
 
+    &.input-error {
+      border-color: red;
+    }
+
     @include tablets {
       padding: rem(8px) rem(11px);
     }

@@ -1,0 +1,1 @@
+const ACTIVE_CLASS = "active";

@@ -1,16 +1,15 @@
-const aboutMenu = document.querySelector(".slider__about-menu");
-const dropdown = document.querySelector(".slider__dropdown");
+$(".slider__about-menu").mouseover(e => {
+  const $this = $(e.currentTarget);
+  const dropdown = $this.find(".slider__dropdown");
 
-aboutMenu.addEventListener("mouseover", e => {
-  e.preventDefault();
-
-  dropdown.classList.add("dropdown--active");
-  aboutMenu.classList.add("slider__about-menu--active");
+  $this.addClass("slider__about-menu--active");
+  dropdown.addClass("dropdown--active");
 });
 
-aboutMenu.addEventListener("mouseout", e => {
-  e.preventDefault();
+$(".slider__about-menu").mouseout(e => {
+  const $this = $(e.currentTarget);
+  const dropdown = $this.find(".slider__dropdown");
 
-  dropdown.classList.remove("dropdown--active");
-  aboutMenu.classList.remove("slider__about-menu--active");
+  $this.removeClass("slider__about-menu--active");
+  dropdown.removeClass("dropdown--active");
 });

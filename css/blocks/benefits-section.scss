@@ -15,6 +15,7 @@
     position: absolute;
     bottom: rem(-115px);
     left: 0;
+    z-index: 5;
 
     @include phones {
       display: none;

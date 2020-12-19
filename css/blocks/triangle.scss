@@ -1,0 +1,11 @@
+.triangle {
+  border-top: 7px solid $darkGreen;
+  border-bottom: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  margin: rem(5px);
+
+  &.active {
+    transform: rotate(180deg);
+  }
+}
