@@ -1,0 +1,189 @@
+.player {
+  position: relative;
+  display: block;
+  max-width: 662px;
+  height: 100%;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #404040;
+    height: rem(35px);
+    padding: 0 rem(16px);
+    z-index: 2;
+  }
+
+  &__splash {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../img/bg/splash.png") center center/cover no-repeat;
+    cursor: pointer;
+    transition: opacity .6s;
+
+    &::after {
+      content: url('../img/icons/play-arrow-big.svg');
+    }
+  }
+
+  &.active .player__splash {
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .6s;
+  }
+
+  .pause-icon {
+    display: none;
+  }
+
+  .play-icon {
+    display: inline;
+  }
+
+  &.paused {
+    .pause-icon {
+      display: inline;
+    }
+
+    .play-icon {
+      display: none;
+    }
+  }
+
+  &-container:before {
+    content: url("../img/decor/big-corner-leaf.png");
+    position: absolute;
+    bottom: rem(-50px);
+    left: 5%;
+  }
+
+  &-container:after {
+    content: url("../img/decor/blurry-little-leaf.png");
+    position: absolute;
+    top: rem(30px);
+    right: 3%;
+  }
+
+  &__playback {
+    flex: 1;
+    margin: 0 rem(16px);
+    position: relative;
+  }
+
+  &__playback:before {
+    content: "";
+    height: rem(4px);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: #626262;
+    display: block;
+    transform: translateY(-50%);
+  }
+
+  &__playback-button {
+    background: #626262;
+    border-radius: rem(50px);
+    border: none;
+    width: rem(12px);
+    height: rem(12px);
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+  }
+
+  &__sound {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__volume {
+    width: rem(80px);
+    position: relative;
+  }
+
+  &__volume:before {
+    content: "";
+    height: rem(4px);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: #626262;
+    display: block;
+    transform: translateY(-50%);
+  }
+
+  &__volume-button {
+    background: #626262;
+    border-radius: rem(50px);
+    border: none;
+    width: rem(12px);
+    height: rem(12px);
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+  }
+
+
+  @include tablets {
+    .player__splash {
+      &::after {
+        content: url('../img/icons/play-arrow.svg');
+      }
+    }
+  }
+
+  @include phones {
+    .player__splash {
+      &::after {
+        content: url('../img/icons/play-arrow-small.svg');
+      }
+    }
+  }
+}
+
+.player-section {
+  position: relative;
+
+
+  &:after {
+    content: url("../img/decor/blackberry.png");
+    position: absolute;
+    right: 0;
+    bottom: rem(-110px);
+    z-index: 10;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+
+}

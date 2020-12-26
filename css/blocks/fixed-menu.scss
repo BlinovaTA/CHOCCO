@@ -4,6 +4,16 @@
   right: 3%;
   z-index: $z-fixed-menu;
 
+  &--black .fixed-menu__link:before {
+    background: black;
+  }
+
+  &--black .fixed-menu__item--active {
+    .fixed-menu__link {
+      border-color: black;
+    }
+  }
+
   &__item {
     margin-bottom: rem(5px);
 

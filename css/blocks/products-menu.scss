@@ -1,0 +1,67 @@
+.products-menu-section {
+  background: url("../img/bg/products-menu.png") center center/cover no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__title {
+    position: absolute;
+    text-align: start;
+    color: #fff;
+    top: 15%;
+    left: 10%;
+  }
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+
+  &__item {
+    display: flex;
+    height: 100%;
+  }
+
+  &__title {
+    position: relative;
+    width: 100px;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  &__name {
+    font-size: rem(48px);
+    color: #fff;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    bottom: 150px;
+    position: relative;
+  }
+
+  &__content {
+    background: rgba(51, 53, 55, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+  }
+
+  &__container {
+    padding: 40px 73px 45px 26px;
+    color: #fff;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: transparent;
+  }
+}
