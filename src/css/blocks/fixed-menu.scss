@@ -4,6 +4,10 @@
   right: 3%;
   z-index: $z-fixed-menu;
 
+  &--hidden {
+    display: none;
+  }
+
   &--black .fixed-menu__link:before {
     background: black;
   }
