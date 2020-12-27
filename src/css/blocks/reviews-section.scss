@@ -2,7 +2,7 @@
   position: relative;
 
   &:before {
-    content: url("../img/decor/half-leaf-berries.png");
+    content: url("img/decor/half-leaf-berries.png");
     position: absolute;
     bottom: rem(-160px);
     left: 0;
@@ -10,7 +10,7 @@
   }
 
   &:after {
-    content: url("../img/decor/strawberry.png");
+    content: url("img/decor/strawberry.png");
     position: absolute;
     top: rem(50px);
     right: rem(20px);

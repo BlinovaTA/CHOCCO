@@ -37,12 +37,12 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: url("../img/bg/splash.png") center center/cover no-repeat;
+    background: url("img/bg/splash.png") center center/cover no-repeat;
     cursor: pointer;
     transition: opacity .6s;
 
     &::after {
-      content: url('../img/icons/play-arrow-big.svg');
+      content: url('img/icons/play-arrow-big.svg');
     }
   }
 
@@ -71,14 +71,14 @@
   }
 
   &-container:before {
-    content: url("../img/decor/big-corner-leaf.png");
+    content: url("img/decor/big-corner-leaf.png");
     position: absolute;
     bottom: rem(-50px);
     left: 5%;
   }
 
   &-container:after {
-    content: url("../img/decor/blurry-little-leaf.png");
+    content: url("img/decor/blurry-little-leaf.png");
     position: absolute;
     top: rem(30px);
     right: 3%;
@@ -154,7 +154,7 @@
   @include tablets {
     .player__splash {
       &::after {
-        content: url('../img/icons/play-arrow.svg');
+        content: url('img/icons/play-arrow.svg');
       }
     }
   }
@@ -162,7 +162,7 @@
   @include phones {
     .player__splash {
       &::after {
-        content: url('../img/icons/play-arrow-small.svg');
+        content: url('img/icons/play-arrow-small.svg');
       }
     }
   }
@@ -173,7 +173,7 @@
 
 
   &:after {
-    content: url("../img/decor/blackberry.png");
+    content: url("img/decor/blackberry.png");
     position: absolute;
     right: 0;
     bottom: rem(-110px);
